@@ -15,8 +15,23 @@
                     <ComboBoxItem Content="Port Scanner"/>
                 </ComboBox>
             </Grid>
-            
+            <Grid Height="100" Name="Grid1" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="545*" />
+                    <ColumnDefinition Width="233*" />
+                </Grid.ColumnDefinitions>
+                <Grid Height="40" Name="Grid2" VerticalAlignment="Top">
+                    <Label FontStyle="Italic" FontWeight="Bold" FontSize="16" HorizontalAlignment="left" Margin="10,0,0,0" Name="Label1" VerticalAlignment="Center">IP Range</Label>
+                </Grid>
+                <Label FontStyle="Italic" HorizontalAlignment="Left" Margin="10,0,0,35" Name="Label3" VerticalAlignment="Bottom" FontSize="15">To :</Label>
+                <TextBox  Height="23" Name="TextBox1" Margin="70,39,0,38" VerticalAlignment="Center" BorderBrush="Black" FontSize="14"/>
+                <TextBox Height="23" Name="TextBox2" Margin="70,77,0,0" VerticalAlignment="Center" BorderBrush="Black" FontSize="14"/>
+                <Label FontStyle="Italic" HorizontalAlignment="left" Margin="10,0,0,0" Name="label5" VerticalAlignment="Bottom" FontSize="15">From :</Label>
+                <Button VerticalAlignment="Center"  Width="100" Height="60"  HorizontalAlignment="Center"  Name="start_button" Click="start_button_Click" Grid.Column="1" Margin="0,35,0,0">Start</Button>
+            </Grid>
+            <DataGrid Name="datagrid" ColumnWidth="*" Height="400" Margin="10">
                 
+            </DataGrid>
         </StackPanel>
     </Grid>
 </Window>
